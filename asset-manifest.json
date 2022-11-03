@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/AlinaVoronaya/Todo-List/static/js/main.4e19a29f.js",
-    "index.html": "/AlinaVoronaya/Todo-List/index.html",
-    "main.4e19a29f.js.map": "/AlinaVoronaya/Todo-List/static/js/main.4e19a29f.js.map"
+    "main.js": "/Todo-List/static/js/main.4e19a29f.js",
+    "index.html": "/Todo-List/index.html",
+    "main.4e19a29f.js.map": "/Todo-List/static/js/main.4e19a29f.js.map"
   },
   "entrypoints": [
     "static/js/main.4e19a29f.js"
