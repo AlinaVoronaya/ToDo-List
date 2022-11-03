@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AlinaVoronaya/Todo-List.git/static/css/main.073c9b0a.css",
-    "main.js": "/AlinaVoronaya/Todo-List.git/static/js/main.65c881bb.js",
-    "static/js/787.63e47474.chunk.js": "/AlinaVoronaya/Todo-List.git/static/js/787.63e47474.chunk.js",
-    "static/media/logo.svg": "/AlinaVoronaya/Todo-List.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/AlinaVoronaya/Todo-List.git/index.html",
-    "main.073c9b0a.css.map": "/AlinaVoronaya/Todo-List.git/static/css/main.073c9b0a.css.map",
-    "main.65c881bb.js.map": "/AlinaVoronaya/Todo-List.git/static/js/main.65c881bb.js.map",
-    "787.63e47474.chunk.js.map": "/AlinaVoronaya/Todo-List.git/static/js/787.63e47474.chunk.js.map"
+    "main.css": "/AlinaVoronaya/Todo-List/static/css/main.073c9b0a.css",
+    "main.js": "/AlinaVoronaya/Todo-List/static/js/main.b815f40a.js",
+    "static/js/787.63e47474.chunk.js": "/AlinaVoronaya/Todo-List/static/js/787.63e47474.chunk.js",
+    "static/media/logo.svg": "/AlinaVoronaya/Todo-List/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/AlinaVoronaya/Todo-List/index.html",
+    "main.073c9b0a.css.map": "/AlinaVoronaya/Todo-List/static/css/main.073c9b0a.css.map",
+    "main.b815f40a.js.map": "/AlinaVoronaya/Todo-List/static/js/main.b815f40a.js.map",
+    "787.63e47474.chunk.js.map": "/AlinaVoronaya/Todo-List/static/js/787.63e47474.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.65c881bb.js"
+    "static/js/main.b815f40a.js"
   ]
 }
