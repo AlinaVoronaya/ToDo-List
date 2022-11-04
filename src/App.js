@@ -67,7 +67,7 @@ function App() {
                     <h1>todos</h1>
                 </div>
                 <AddTodo addTodo={addTodo}/>
-                {filtered.map(todo => (
+                {todo.map(todo => (
                     <TodoItem
                         key={todo.id}
                         todo={todo}

@@ -5,6 +5,18 @@ export const AddTodo = ({addTodo}) => {
 
     const [text, setText] = useState('');
 
+    const onKeyDown = (e) => {
+        if (e.key === "Enter") {
+            addTodo(text)
+            setText('')
+        }
+    }
+
+    const onButton = () => {
+        addTodo(text)
+        setText('')
+    }
+
     return (
         <div className="add-todo">
             <input
@@ -13,9 +25,9 @@ export const AddTodo = ({addTodo}) => {
                 className="add-todo__input"
                 onChange={e => setText(e.target.value)}
                 value={text}
-                onKeyDown={e => e.key === 'Enter' && addTodo(text)}
+                onKeyDown={onKeyDown}
             />
-            <button className="add-todo__btn" onClick={addTodo}>
+            <button className="add-todo__btn" onClick={onButton}>
                 Add
             </button>
         </div>
