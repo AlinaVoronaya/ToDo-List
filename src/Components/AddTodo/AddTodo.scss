@@ -1,0 +1,25 @@
+.add-todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(81, 59, 86, 0.1);
+  margin-bottom: 20px;
+  height: 60px;
+  &__input {
+    border: rgba(81, 59, 86, 0.3) solid 1px;
+    border-radius: 5px;
+    padding-left: 10px ;
+    width: 50%;
+  }
+  &__btn {
+    border: rgba(81, 59, 86, 0.3) solid 1px;
+    border-radius: 5px;
+    padding: 0 10px;
+    &:hover {
+      background-color: rgba(81, 59, 86, 0.3);
+    }
+  }
+  &::placeholder {
+    color: rgba(81, 59, 86, 0.9);
+  }
+}

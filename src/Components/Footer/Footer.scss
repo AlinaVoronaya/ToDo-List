@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(81, 59, 86, 0.1);
+  height: 60px;
+  &__btn {
+    border: rgba(81, 59, 86, 0.3) solid 1px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    &:hover {
+      background-color: rgba(81, 59, 86, 0.3);
+    }
+  }
+}
