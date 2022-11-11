@@ -4,7 +4,7 @@ import {TodoItem} from "./Components/Item/TodoItem/TodoItem";
 import {Footer} from "./Components/Footer/Footer";
 import './App.scss';
 
-const todos = [
+const defaultTodos = [
     {
         id: 1,
         text: 'First task',
@@ -24,38 +24,39 @@ const todos = [
 
 function App() {
 
-    const [todo, setTodo] = useState(todos);
-    const [filtered, setFiltered] = useState(todo);
+    const [todos, setTodos] = useState(defaultTodos);
+    const [filterState, setFilterState] = useState(0);
 
-    const todoFilter = (isCompleted) => {
-        if (isCompleted === "All") {
-            setFiltered(todo)
-        } else {
-            let newTodo = [...todo].filter(t => t.isCompleted === isCompleted)
-            setFiltered(newTodo)
+    const filterTodos = (todos, filterState) => {
+        if (filterState === 1) {
+            return todos.filter(item => item.isCompleted)
         }
+        if (filterState === 2) {
+            return todos.filter(item => !item.isCompleted)
+        }
+        return todos;
     }
 
     const addTodo = (text) => {
-        setTodo([{
+        setTodos([{
             id: new Date(),
             text,
             isCompleted: false
         },
-            ...todo
+            ...todos
         ])
     };
 
 
     const changeTodo = id => {
-        const copy = [...todos]
+        const copy = [...defaultTodos]
         const current = copy.find(t => t.id === id)
         current.isCompleted = !current.isCompleted
-        setTodo(copy)
+        setTodos(copy)
     };
 
     const removeTodo = id => {
-        setTodo([...todo].filter(t => t.id !== id));
+        setTodos([...todos].filter(t => t.id !== id));
     };
 
     //перед мапом поменяла todo на filtered
@@ -67,7 +68,7 @@ function App() {
                     <h1>todos</h1>
                 </div>
                 <AddTodo addTodo={addTodo}/>
-                {todo.map(todo => (
+                {filterTodos(todos, filterState).map(todo => (
                     <TodoItem
                         key={todo.id}
                         todo={todo}
@@ -76,8 +77,8 @@ function App() {
                     />
                 ))}
                 <Footer
-                    countTodo={todo.length}
-                    todoFilter={todoFilter}
+                    countTodo={filterTodos(todos, 2).length}
+                    setFilterState={setFilterState}
                 />
             </div>
         </div>
