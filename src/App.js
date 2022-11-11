@@ -22,16 +22,20 @@ const defaultTodos = [
     }
 ];
 
+const filterAll = 0;
+const filterComplete = 1;
+const filterIncomplete = 2;
+
 function App() {
 
     const [todos, setTodos] = useState(defaultTodos);
-    const [filterState, setFilterState] = useState(0);
+    const [filterState, setFilterState] = useState(filterAll);
 
     const filterTodos = (todos, filterState) => {
-        if (filterState === 1) {
+        if (filterState === filterComplete) {
             return todos.filter(item => item.isCompleted)
         }
-        if (filterState === 2) {
+        if (filterState === filterIncomplete) {
             return todos.filter(item => !item.isCompleted)
         }
         return todos;
@@ -77,7 +81,7 @@ function App() {
                     />
                 ))}
                 <Footer
-                    countTodo={filterTodos(todos, 2).length}
+                    countTodo={filterTodos(todos, filterIncomplete).length}
                     setFilterState={setFilterState}
                 />
             </div>
