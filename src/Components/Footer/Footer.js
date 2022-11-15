@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './Footer.scss';
 
 export const Footer = ({countTodo, setFilterState}) => {

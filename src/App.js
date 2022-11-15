@@ -53,7 +53,7 @@ function App() {
 
 
     const changeTodo = id => {
-        const copy = [...defaultTodos]
+        const copy = [...todos]
         const current = copy.find(t => t.id === id)
         current.isCompleted = !current.isCompleted
         setTodos(copy)
