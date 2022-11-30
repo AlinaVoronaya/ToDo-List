@@ -4,6 +4,7 @@ import {TodoItem} from "./Components/Item/TodoItem/TodoItem";
 import {Footer} from "./Components/Footer/Footer";
 import './App.scss';
 
+
 const defaultTodos = [
     {
         id: 1,
@@ -63,7 +64,6 @@ function App() {
         setTodos([...todos].filter(t => t.id !== id));
     };
 
-    //перед мапом поменяла todo на filtered
 
     return (
         <div className="app-container">

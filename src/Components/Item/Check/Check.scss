@@ -5,7 +5,10 @@
   margin-right: 10px;
   cursor: pointer;
   &--checked {
-    background-color: green;
+    background-image: url('../images/done.png');
+    background-size: 16px 16px;
+    background-position: center;
+    background-color: #9ace9a;
   }
 }
 
